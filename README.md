@@ -17,14 +17,10 @@ uv run xanylabeling
 uv run xanylabeling --filename ./coco8/images/train --output ./coco8/xlabels/train
 
 # 将YOLO的text转为xanlabeling的json格式
-uv run utils/covert_hbb_txt_2_json.py \
-  --images coco8/images/train \
-  --labels coco8/labels/train \
-  --classes coco8/classes.txt 
+uv run utils/covert_hbb_txt_2_json.py --images coco8/images/train --labels coco8/labels/train --classes coco8/classes.txt
 
 #  将xanylabeling的json格式转为YOLO的text格式
-uv run xanylabeling convert --task xlabel2yolo --mode detect --images ./coco8/images/train --labels ./coco8/xlabels/train \
-    --output ./coco8/labels/train --classes coco8/classes.txt 
+uv run xanylabeling convert --task xlabel2yolo --mode detect --images ./coco8/images/train --labels ./coco8/xlabels/train --output ./coco8/labels/train --classes coco8/classes.txt
 ```
 
 # 预测
@@ -37,18 +33,13 @@ uv run yolo predict model=./runs/detect/yolo26n_coco8_experiment1/weights/best.p
 
 ```bash
 # 生成yolo的yaml文件
-uv run utils/gen_yolo_yaml.py \
-  --images coco8/images \
-  --labels coco8/labels \
-  --classes coco8/classes.txt \
-  --output coco8.yaml
-
+uv run utils/gen_yolo_yaml.py --images coco8/images --labels coco8/labels --classes coco8/classes.txt --output coco8.yaml
 
 # 开始训练
 uv run yolo train data='./coco8.yaml' model=yolo26n.pt epochs=10 lr0=0.01
 
 # 开始训练，指定名称
-uv run yolo train data='./coco8.yaml' model=yolo26n.pt epochs=10 lr0=0.01 name='yolo26n_coco8_experiment1'
+uv run yolo train data='./coco8.yaml' model=yolo26n.pt epochs=100 lr0=0.01 name='yolo26n_coco8_experiment1' device=0
 
 # 中断后继续训练
 uv run yolo train model='./runs/detect/yolo26n_coco8_experiment1/weights/last.pt' resume=True
