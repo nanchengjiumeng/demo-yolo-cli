@@ -19,17 +19,11 @@ override-dependencies = [
 ]
 
 [[tool.uv.index]]
-name = "pytorch-cu124"
-url = "https://download.pytorch.org/whl/cu124"
-explicit = true
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true  # 这意味着 uv 不会盲目扫描这个源，除非被显式指定
 
 [tool.uv.sources]
-torch = [
-  { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
-]
-torchvision = [
-  { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
-]
-torchaudio = [
-  { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
-]
+torch = { index = "pytorch-cu121", marker = "sys_platform == 'win32'" }
+torchvision = { index = "pytorch-cu121", marker = "sys_platform == 'win32'" }
+torchaudio = { index = "pytorch-cu121", marker = "sys_platform == 'win32'" }
