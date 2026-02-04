@@ -55,6 +55,7 @@ uv pip uninstall torch torchvision torchaudio
 
 # 安装支持 CUDA 12.1 的版本 (目前主流)
 uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+uv add torch torchvision torchaudio
 ```
 
 2. 硬件驱动：安装 NVIDIA 驱动

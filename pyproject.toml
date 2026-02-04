@@ -8,6 +8,9 @@ dependencies = [
     "pytubefix>=10.3.6",
     "ultralytics>=8.4.11",
     "x-anylabeling-cvhub>=3.3.9",
+    "torch>=2.5.1; sys_platform == 'win32'",
+    "torchaudio>=2.5.1; sys_platform == 'win32'",
+    "torchvision>=0.20.1; sys_platform == 'win32'",
 ]
 
 [tool.uv]
