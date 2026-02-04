@@ -7,5 +7,5 @@ requires-python = ">=3.10,<3.13"
 dependencies = [
     "pytubefix>=10.3.6",
     "ultralytics>=8.4.11",
-    "x-anylabeling-cvhub>=3.2.6",
+    "x-anylabeling-cvhub==3.2.2",
 ]
