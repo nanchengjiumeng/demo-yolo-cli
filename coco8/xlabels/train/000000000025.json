@@ -1,0 +1,68 @@
+{
+  "version": "3.3.9",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "giraffe",
+      "score": null,
+      "points": [
+        [
+          385.52992000000006,
+          60.03000299999999
+        ],
+        [
+          600.50016,
+          60.03000299999999
+        ],
+        [
+          600.50016,
+          357.190137
+        ],
+        [
+          385.52992000000006,
+          357.190137
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "giraffe",
+      "score": null,
+      "points": [
+        [
+          53.010239999999996,
+          356.490006
+        ],
+        [
+          185.04032,
+          356.490006
+        ],
+        [
+          185.04032,
+          411.68001
+        ],
+        [
+          53.010239999999996,
+          411.68001
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "../../images/train/000000000025.jpg",
+  "imageData": null,
+  "imageHeight": 426,
+  "imageWidth": 640
+}

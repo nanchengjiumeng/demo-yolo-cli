@@ -1,0 +1,68 @@
+{
+  "version": "3.3.9",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "potted plant",
+      "score": null,
+      "points": [
+        [
+          204.86016,
+          31.019727999999994
+        ],
+        [
+          459.74016,
+          31.019727999999994
+        ],
+        [
+          459.74016,
+          355.13984800000003
+        ],
+        [
+          204.86016,
+          355.13984800000003
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "vase",
+      "score": null,
+      "points": [
+        [
+          237.56032,
+          155.80997600000003
+        ],
+        [
+          403.96031999999997,
+          155.80997600000003
+        ],
+        [
+          403.96031999999997,
+          351.060152
+        ],
+        [
+          237.56032,
+          351.060152
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "../../images/train/000000000030.jpg",
+  "imageData": null,
+  "imageHeight": 428,
+  "imageWidth": 640
+}
